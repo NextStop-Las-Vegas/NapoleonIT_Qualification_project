@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="CIf-Ky-vpN" customClass="AboutOfMaster" customModule="Qualification_project" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3aL-Im-tpU">
+                    <rect key="frame" x="10" y="54" width="120" height="120"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="WNn-Bv-i1X"/>
+                        <constraint firstAttribute="height" constant="120" id="izJ-Ae-CmS"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mzm-V7-MAh">
+                    <rect key="frame" x="150" y="54" width="244" height="40"/>
+                    <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="25"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="info" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4LG-Kv-LLz">
+                    <rect key="frame" x="10" y="184" width="394" height="668"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="8dD-VD-Pzo"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="8dD-VD-Pzo" firstAttribute="trailing" secondItem="4LG-Kv-LLz" secondAttribute="trailing" constant="10" id="B3V-LQ-QH5"/>
+                <constraint firstItem="mzm-V7-MAh" firstAttribute="top" secondItem="3aL-Im-tpU" secondAttribute="top" id="CD0-cc-Y3T"/>
+                <constraint firstItem="4LG-Kv-LLz" firstAttribute="top" secondItem="3aL-Im-tpU" secondAttribute="bottom" constant="10" id="GXL-tI-5Eh"/>
+                <constraint firstItem="8dD-VD-Pzo" firstAttribute="bottom" secondItem="4LG-Kv-LLz" secondAttribute="bottom" constant="10" id="NIR-RT-dMK"/>
+                <constraint firstItem="3aL-Im-tpU" firstAttribute="top" secondItem="8dD-VD-Pzo" secondAttribute="top" constant="10" id="U5a-Er-ToM"/>
+                <constraint firstItem="4LG-Kv-LLz" firstAttribute="leading" secondItem="8dD-VD-Pzo" secondAttribute="leading" constant="10" id="eVF-er-ixj"/>
+                <constraint firstItem="mzm-V7-MAh" firstAttribute="leading" secondItem="3aL-Im-tpU" secondAttribute="trailing" constant="20" id="kyS-YI-1e3"/>
+                <constraint firstItem="8dD-VD-Pzo" firstAttribute="bottom" secondItem="mzm-V7-MAh" secondAttribute="bottom" constant="768" id="n4D-dJ-c9V"/>
+                <constraint firstItem="mzm-V7-MAh" firstAttribute="trailing" secondItem="CIf-Ky-vpN" secondAttribute="trailingMargin" id="xkx-vD-tQM"/>
+                <constraint firstItem="3aL-Im-tpU" firstAttribute="leading" secondItem="8dD-VD-Pzo" secondAttribute="leading" constant="10" id="yCH-ld-tYQ"/>
+            </constraints>
+            <connections>
+                <outlet property="infoLabel" destination="4LG-Kv-LLz" id="c6b-vZ-gRD"/>
+                <outlet property="nameLabel" destination="mzm-V7-MAh" id="Wpl-4S-7K5"/>
+                <outlet property="photoProfile" destination="3aL-Im-tpU" id="E1Q-ai-VTt"/>
+            </connections>
+            <point key="canvasLocation" x="186.95652173913044" y="46.875"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
