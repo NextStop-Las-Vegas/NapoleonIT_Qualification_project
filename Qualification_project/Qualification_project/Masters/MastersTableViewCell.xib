@@ -27,7 +27,7 @@
                                     <constraint firstAttribute="width" constant="80" id="fTT-yq-B2g"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="about of master" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WZc-8p-dyb">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="about of master" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WZc-8p-dyb">
                                 <rect key="frame" x="93" y="22" width="160" height="60"/>
                                 <fontDescription key="fontDescription" name="Copperplate-Light" family="Copperplate" pointSize="8"/>
                                 <nil key="textColor"/>
@@ -66,7 +66,7 @@
                             <constraint firstItem="ivJ-cd-lPh" firstAttribute="leading" secondItem="VMh-5p-cgu" secondAttribute="leading" constant="5" id="Nbl-Cd-QTA"/>
                             <constraint firstItem="WZc-8p-dyb" firstAttribute="bottom" secondItem="6q5-Oy-clX" secondAttribute="bottom" id="RIJ-4d-9ob"/>
                             <constraint firstItem="ivJ-cd-lPh" firstAttribute="top" secondItem="VMh-5p-cgu" secondAttribute="top" constant="5" id="XNh-FK-vZi"/>
-                            <constraint firstItem="WZc-8p-dyb" firstAttribute="leading" secondItem="ivJ-cd-lPh" secondAttribute="trailing" constant="8" symbolic="YES" id="eCn-cL-xaa"/>
+                            <constraint firstItem="WZc-8p-dyb" firstAttribute="leading" secondItem="ivJ-cd-lPh" secondAttribute="trailing" priority="999" constant="8" symbolic="YES" id="eCn-cL-xaa"/>
                             <constraint firstAttribute="bottom" secondItem="ivJ-cd-lPh" secondAttribute="bottom" constant="5" id="nio-fD-Hbq"/>
                             <constraint firstItem="6q5-Oy-clX" firstAttribute="leading" secondItem="WZc-8p-dyb" secondAttribute="trailing" constant="22" id="wuM-Wc-skK"/>
                         </constraints>

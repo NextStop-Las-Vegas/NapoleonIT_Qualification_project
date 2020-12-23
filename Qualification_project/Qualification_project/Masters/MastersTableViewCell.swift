@@ -30,5 +30,8 @@ class MastersTableViewCell: UITableViewCell {
     }
     func setup(){
         viewBottomLayer.backgroundColor = #colorLiteral(red: 0.9999960065, green: 1, blue: 1, alpha: 1)
+        masterPhotoProfile.contentMode = .scaleAspectFill
+        masterPhotoProfile.layer.cornerRadius = 40
+        masterPhotoProfile.clipsToBounds = true
     }
 }

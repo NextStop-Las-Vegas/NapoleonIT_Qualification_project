@@ -29,7 +29,7 @@ class LoginViewController: UIViewController {
     func setUpElements() {
         
         // Hide the error label
-        errorLabel.alpha = 0
+        self.errorLabel.alpha = 0
         
         // Style the elements
         Utilities.styleTextField(emailTextField)

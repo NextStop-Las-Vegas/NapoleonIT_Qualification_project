@@ -15,6 +15,10 @@ class AboutOfMaster: UIViewController{
     
     
     override func awakeFromNib() {
+        photoProfile.contentMode = .scaleAspectFill
+        photoProfile.layer.cornerRadius = 40
+        photoProfile.clipsToBounds = true
+        
         super.awakeFromNib()
     }
 
