@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Qualification_project
+//  TestFirebase
 //
-//  Created by Pavel on 21.12.2020.
+//  Created by Pavel on 23.12.2020.
 //
 
 import UIKit
@@ -12,13 +12,14 @@ import Firebase
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
+
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        FirebaseApp.configure()
+        // Override point for customization after application launch.
         return true
     }
 
-    
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
@@ -42,7 +43,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          application to it. This property is optional since there are legitimate
          error conditions that could cause the creation of the store to fail.
         */
-        let container = NSPersistentContainer(name: "Qualification_project")
+        let container = NSPersistentContainer(name: "TestFirebase")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.

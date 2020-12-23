@@ -16,14 +16,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bkgrnd2" translatesAutoresizingMaskIntoConstraints="NO" id="gkB-zc-YQz">
-                                <rect key="frame" x="-125" y="-101" width="621" height="1092"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="621" id="9Z3-Ui-mwe"/>
-                                    <constraint firstAttribute="height" constant="1092" id="ewX-rO-eEZ"/>
-                                </constraints>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bkgrnd2" translatesAutoresizingMaskIntoConstraints="NO" id="c3d-RC-D5a">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our Barber's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NPB-72-28l">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our Barber's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="NPB-72-28l">
                                 <rect key="frame" x="18.5" y="417.5" width="377.5" height="61.5"/>
                                 <fontDescription key="fontDescription" name="Copperplate-Light" family="Copperplate" pointSize="55"/>
                                 <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
@@ -35,10 +31,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="c3d-RC-D5a" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" constant="-44" id="3xJ-Yw-Xba"/>
                             <constraint firstItem="NPB-72-28l" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="4eW-Dp-bB8"/>
-                            <constraint firstItem="gkB-zc-YQz" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="-101" id="7JQ-C7-uOG"/>
-                            <constraint firstItem="gkB-zc-YQz" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="-125" id="hSh-7G-H8r"/>
+                            <constraint firstItem="c3d-RC-D5a" firstAttribute="centerY" secondItem="NPB-72-28l" secondAttribute="centerY" id="dOs-ZC-Yhl"/>
                             <constraint firstItem="NPB-72-28l" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="jeO-EH-tXC"/>
+                            <constraint firstItem="c3d-RC-D5a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xiO-3F-LZs"/>
+                            <constraint firstItem="c3d-RC-D5a" firstAttribute="centerX" secondItem="NPB-72-28l" secondAttribute="centerX" id="z5Q-iw-7QW"/>
                         </constraints>
                     </view>
                 </viewController>
