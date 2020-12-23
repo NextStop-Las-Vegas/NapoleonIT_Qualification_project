@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AboutOfMaster: UIView{
+class AboutOfMaster: UIViewController{
     
     @IBOutlet weak var photoProfile: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!

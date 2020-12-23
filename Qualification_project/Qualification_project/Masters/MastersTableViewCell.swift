@@ -17,8 +17,7 @@ class MastersTableViewCell: UITableViewCell {
     var delegate: ButtonDelegate?
 
     @IBAction func pushFullScreenButton(_ sender: Any) {
-        self.delegate?.pushFullScreenButton()
-
+        self.delegate?.pushFullScreenButton(name: masterName.text ?? "", description: masterInfoLabel.text ?? "", image: masterPhotoProfile.image ?? UIImage())
     }
         
     override func awakeFromNib() {

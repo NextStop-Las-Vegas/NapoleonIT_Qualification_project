@@ -7,7 +7,7 @@ struct newsCellData {
 }
 
 protocol ButtonDelegateTwo {
-    func thinkMoreButton()
+    func thinkMoreButton(header: String, text: String)
 }
 
 class NewsTableViewController: UITableViewController {
@@ -15,6 +15,7 @@ class NewsTableViewController: UITableViewController {
     var arrayOfNewsCellData = [newsCellData]()
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
         arrayOfNewsCellData = [newsCellData(header: "Скидки в новый год", text: "Назови секретное слово и получи скидку в новый год", buttonText: "узнать больше"),
@@ -48,9 +49,12 @@ class NewsTableViewController: UITableViewController {
 }
 
 extension NewsTableViewController: ButtonDelegateTwo {
-    func thinkMoreButton() {
+    func thinkMoreButton(header: String, text: String) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let newsViewController = storyboard.instantiateViewController(withIdentifier: "MoreNews") as! MoreNewsViewController
+        let newsViewController = Bundle.main.loadNibNamed("MoreNews", owner: self, options: nil)?.first as! MoreNews
+        newsViewController.headeerLabel.text = header
+        newsViewController.textLabel.text = text
+//        let newsViewController = storyboard.instantiateViewController(withIdentifier: "MoreNews") as! MoreNewsViewController
         self.navigationController?.pushViewController(newsViewController, animated: true)
     }
 }

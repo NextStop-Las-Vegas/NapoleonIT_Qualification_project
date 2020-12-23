@@ -15,7 +15,7 @@ struct mastersCellData {
 }
 
 protocol ButtonDelegate {
-    func pushFullScreenButton()
+    func pushFullScreenButton(name: String, description: String, image: UIImage)
 }
 
 class MastersTableViewController: UITableViewController {
@@ -26,8 +26,8 @@ class MastersTableViewController: UITableViewController {
         super.viewDidLoad()
         
         arrayOfMastersCellData = [mastersCellData(photo: #imageLiteral(resourceName: "bckgrnsqr7.png"), info: "Григо́рий — мужское русское личное имя греческого происхождения; восходит к др.-греч. γρηγορέω («грегорео») — «бодрствую». Григорий — одно из немногих собственно христианских имён, появившееся в эпоху становления христианства; имя метафорически сопоставлялось с личными качествами идеального христианина.", name: "Григорий"),
-                                  mastersCellData(photo: #imageLiteral(resourceName: "bckgrnsqr5.png"), info: "Фили́пп (др.-греч. Φίλιππος — «любящий лошадей»; от др.-греч. φιλέω — «люблю», и др.-греч. ἵππος — «лошадь») — мужское имя греческого происхождения[1][2][3]. У А. В. Суперанской имя переводится не только как «любящий лошадей», но и как «увлекающийся верховой ездой»[2].", name: "Филипп"),
-                                  mastersCellData(photo: #imageLiteral(resourceName: "bckgrnsqr4.png"), info: "Джон[1] — распространённое английское мужское имя, происходящее от еврейского Йоханаан (ивр. יחנן Iōḥānān, Iěhōḥānān в буквальном переводе «будет помилован». В данном контексте — Яхве (Бог) смилостивился, Яхве (Бог) помиловал)[2]. Соответствует русскому имени Иоанн", name: "Джон"),
+                                  mastersCellData(photo: #imageLiteral(resourceName: "bckgrnsqr5.png"), info: "Фили́пп (др.-греч. Φίλιππος — «любящий лошадей»; от др.-греч. φιλέω — «люблю», и др.-греч. ἵππος — «лошадь») — мужское имя греческого происхождения. У А. В. Суперанской имя переводится не только как «любящий лошадей», но и как «увлекающийся верховой ездой».", name: "Филипп"),
+                                  mastersCellData(photo: #imageLiteral(resourceName: "bckgrnsqr4.png"), info: "Джон — распространённое английское мужское имя, происходящее от еврейского Йоханаан (ивр. יחנן Iōḥānān, Iěhōḥānān в буквальном переводе «будет помилован». В данном контексте — Яхве (Бог) смилостивился, Яхве (Бог) помиловал). Соответствует русскому имени Иоанн.", name: "Джон"),
                                   mastersCellData(photo: #imageLiteral(resourceName: "bckgrnsqr6.png"), info: "Марк — мужское личное имя латинского происхождения.", name: "Марк"),]
         
     }
@@ -58,9 +58,13 @@ class MastersTableViewController: UITableViewController {
 }
 
 extension MastersTableViewController: ButtonDelegate {
-    func pushFullScreenButton() {
+    func pushFullScreenButton(name: String, description: String, image: UIImage) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let aboutViewController = storyboard.instantiateViewController(withIdentifier: "AboutOfMaster") as! AboutOfMasterViewController
+        let aboutViewController = Bundle.main.loadNibNamed("AboutOfMaster", owner: self, options: nil)?.first as! AboutOfMaster        
+        aboutViewController.nameLabel.text = name
+        aboutViewController.infoLabel.text = description
+        aboutViewController.photoProfile.image = image
+
         self.navigationController?.pushViewController(aboutViewController, animated: true)
     }
 }

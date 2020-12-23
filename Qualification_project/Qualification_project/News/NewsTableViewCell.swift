@@ -15,7 +15,8 @@ class NewsTableViewCell: UITableViewCell {
     
     var delegate: ButtonDelegateTwo?
     @IBAction func thinkMoreButton(_ sender: Any) {
-        self.delegate?.thinkMoreButton()
+//        self.delegate?.thinkMoreButton()
+        self.delegate?.thinkMoreButton(header: newsHeaderLabel.text ?? "", text: newsTextLabel.text ?? "" )
     }
     
     

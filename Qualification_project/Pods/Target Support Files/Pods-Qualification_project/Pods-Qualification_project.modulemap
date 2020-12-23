@@ -1,0 +1,6 @@
+framework module Pods_Qualification_project {
+  umbrella header "Pods-Qualification_project-umbrella.h"
+
+  export *
+  module * { export * }
+}

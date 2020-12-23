@@ -10,10 +10,16 @@ import UIKit
 
 class AboutOfMasterViewController: UIViewController {
     
+    var descriprion = ""
+    var name = ""
+    
     @IBOutlet var aboutOfMaster: UIView!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
     
+    override func viewDidLoad() {
+        print(descriprion)
+        print(name)
+        super.viewDidLoad()
+        
+    }
 }

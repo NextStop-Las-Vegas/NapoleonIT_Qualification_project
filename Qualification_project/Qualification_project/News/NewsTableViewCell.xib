@@ -18,7 +18,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B0A-l4-vRS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="101"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="newsHeader" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SIG-xo-akL">
                                 <rect key="frame" x="5" y="5" width="310" height="20.5"/>
@@ -26,15 +26,15 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="newsText" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="42x-SA-Gp7">
-                                <rect key="frame" x="8" y="44" width="304" height="13"/>
+                                <rect key="frame" x="8" y="44" width="304" height="24"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="13" id="YI1-Fy-ltK"/>
+                                    <constraint firstAttribute="height" constant="24" id="CmF-9O-oiu"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Copperplate-Light" family="Copperplate" pointSize="12"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Fk-6H-Fnk">
-                                <rect key="frame" x="142" y="70" width="36" height="31"/>
+                                <rect key="frame" x="142" y="70" width="36" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="jny-0X-TS5"/>
                                 </constraints>
@@ -53,12 +53,10 @@
                             <constraint firstItem="0Fk-6H-Fnk" firstAttribute="centerX" secondItem="B0A-l4-vRS" secondAttribute="centerX" id="2ll-Gh-5fu"/>
                             <constraint firstAttribute="bottom" secondItem="0Fk-6H-Fnk" secondAttribute="bottom" id="7Ue-PL-6sT"/>
                             <constraint firstAttribute="trailing" secondItem="SIG-xo-akL" secondAttribute="trailing" constant="5" id="OwA-NK-B4P"/>
-                            <constraint firstItem="42x-SA-Gp7" firstAttribute="centerY" secondItem="B0A-l4-vRS" secondAttribute="centerY" id="W3g-ow-ikl"/>
-                            <constraint firstItem="42x-SA-Gp7" firstAttribute="leading" secondItem="B0A-l4-vRS" secondAttribute="leadingMargin" id="ZUl-tc-wXU"/>
-                            <constraint firstItem="42x-SA-Gp7" firstAttribute="centerX" secondItem="SIG-xo-akL" secondAttribute="centerX" id="cn1-wn-KAx"/>
-                            <constraint firstItem="0Fk-6H-Fnk" firstAttribute="top" secondItem="42x-SA-Gp7" secondAttribute="bottom" constant="13" id="jTD-Gx-3r5"/>
+                            <constraint firstItem="0Fk-6H-Fnk" firstAttribute="top" secondItem="42x-SA-Gp7" secondAttribute="bottom" constant="2" id="Srx-9o-ilj"/>
+                            <constraint firstItem="42x-SA-Gp7" firstAttribute="centerX" secondItem="0Fk-6H-Fnk" secondAttribute="centerX" id="jNu-3L-v4t"/>
                             <constraint firstItem="SIG-xo-akL" firstAttribute="leading" secondItem="B0A-l4-vRS" secondAttribute="leading" constant="5" id="kGA-tJ-Umd"/>
-                            <constraint firstItem="42x-SA-Gp7" firstAttribute="top" secondItem="SIG-xo-akL" secondAttribute="bottom" constant="18.5" id="owK-M0-Psh"/>
+                            <constraint firstItem="42x-SA-Gp7" firstAttribute="leading" secondItem="B0A-l4-vRS" secondAttribute="leadingMargin" id="p5k-Qu-jUG"/>
                         </constraints>
                     </view>
                 </subviews>
