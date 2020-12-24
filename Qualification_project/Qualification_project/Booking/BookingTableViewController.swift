@@ -23,6 +23,7 @@ class BookingTableViewController: UITableViewController {
                                   bookingCellData(city: "Челябинск", street: "пр-т. Ленина", location: #imageLiteral(resourceName: "map3.png")),
                                   bookingCellData(city: "Челябинск", street: "ул. Университетская Набережная", location: #imageLiteral(resourceName: "map2.png"))]
     }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return arrayOfBookingCellData.count
@@ -41,4 +42,15 @@ class BookingTableViewController: UITableViewController {
     override  func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 230
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+            self.transitionToOrder()
+    }
+    
+    func transitionToOrder() {
+        
+        let pickDateViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.pickDateViewController) as! PickDateViewController
+        self.navigationController?.pushViewController(pickDateViewController, animated: true)
+    }
 }
+

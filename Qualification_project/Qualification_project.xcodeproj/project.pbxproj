@@ -18,6 +18,7 @@
 		E9551B402593A2A300FBA622 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9551B3F2593A2A300FBA622 /* Utilities.swift */; };
 		E9551B432593A2AD00FBA622 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9551B422593A2AD00FBA622 /* Constants.swift */; };
 		E95F003D25918BD1009CAFFF /* MoreNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95F003C25918BD1009CAFFF /* MoreNewsViewController.swift */; };
+		E9B256272593F4EC00E5BC7E /* PickDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B256262593F4EC00E5BC7E /* PickDateViewController.swift */; };
 		E9E2384B2591874100AD739D /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E2384A2591874100AD739D /* NewsTableViewCell.swift */; };
 		E9E2384E259187B800AD739D /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E2384D259187B800AD739D /* NewsTableViewController.swift */; };
 		E9F88D372590CB16005239EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F88D362590CB16005239EF /* AppDelegate.swift */; };
@@ -53,6 +54,7 @@
 		E9551B3F2593A2A300FBA622 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		E9551B422593A2AD00FBA622 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E95F003C25918BD1009CAFFF /* MoreNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreNewsViewController.swift; sourceTree = "<group>"; };
+		E9B256262593F4EC00E5BC7E /* PickDateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickDateViewController.swift; sourceTree = "<group>"; };
 		E9E2384A2591874100AD739D /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		E9E2384D259187B800AD739D /* NewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
 		E9F88D332590CB16005239EF /* Qualification_project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qualification_project.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,6 +164,7 @@
 				E9F88D6225916084005239EF /* BookingTableViewController.swift */,
 				E9F88D5A259155AC005239EF /* BookingTableViewCell.swift */,
 				E9F88D5B259155AC005239EF /* BookingTableViewCell.xib */,
+				E9B256262593F4EC00E5BC7E /* PickDateViewController.swift */,
 			);
 			path = Booking;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 				E95F003D25918BD1009CAFFF /* MoreNewsViewController.swift in Sources */,
 				E9551B432593A2AD00FBA622 /* Constants.swift in Sources */,
 				E9551B392593A13F00FBA622 /* LoginViewController.swift in Sources */,
+				E9B256272593F4EC00E5BC7E /* PickDateViewController.swift in Sources */,
 				E9F88D7125916A17005239EF /* MastersTableViewController.swift in Sources */,
 				E9F88D7525917721005239EF /* AboutOfMasterViewController.swift in Sources */,
 				E9F88D7B25917DA2005239EF /* AboutOfMaster.swift in Sources */,

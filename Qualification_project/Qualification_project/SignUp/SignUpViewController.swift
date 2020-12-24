@@ -20,20 +20,6 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var errorLabel: UILabel!
     
-    //
-//    @IBOutlet weak var firstNameTextField: UITextField!
-//
-//    @IBOutlet weak var lastNameTextField: UITextField!
-//
-//    @IBOutlet weak var emailTextField: UITextField!
-//
-//    @IBOutlet weak var passwordTextField: UITextField!
-//
-//    @IBOutlet weak var signUpButton: UIButton!
-//
-//    @IBOutlet weak var errorLabel: UILabel!
-//
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -63,7 +49,7 @@ class SignUpViewController: UIViewController {
             emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
             passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
             
-            return "Please fill in all fields."
+            return "Заполните все поля"
         }
         
         // Check if the password is secure
@@ -71,7 +57,7 @@ class SignUpViewController: UIViewController {
         
         if Utilities.isPasswordValid(cleanedPassword) == false {
             // Password isn't secure enough
-            return "Please make sure your password is at least 8 characters, contains a special character and a number."
+            return "Пароль должен соcтоять из 8 символов и содержать специальные знаки"
         }
         
         return nil
@@ -106,7 +92,7 @@ class SignUpViewController: UIViewController {
                 if err != nil {
                     
                     // There was an error creating the user
-                    self.showError("Error creating user")
+                    self.showError("Ошибка создания пользователя")
                 }
                 else {
                     
@@ -116,7 +102,7 @@ class SignUpViewController: UIViewController {
                         
                         if error != nil {
                             // Show error message
-                            self.showError("Error saving user data")
+                            self.showError("Ошибка при сохранении пользовательских данных")
                         }
                     }
                     
@@ -139,10 +125,8 @@ class SignUpViewController: UIViewController {
     
     func transitionToHome() {
         
-        let homeViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? HomeViewController
-        
-        view.window?.rootViewController = homeViewController
-        view.window?.makeKeyAndVisible()
+        let homeViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as! HomeViewController
+        self.navigationController?.pushViewController(homeViewController, animated: true)
         
     }
     
