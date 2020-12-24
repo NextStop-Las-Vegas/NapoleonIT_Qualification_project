@@ -32,7 +32,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="info" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="4LG-Kv-LLz">
-                        <rect key="frame" x="20" y="204" width="374" height="260"/>
+                        <rect key="frame" x="20" y="204" width="374" height="20.5"/>
                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -43,7 +43,6 @@
                     <constraint firstItem="4LG-Kv-LLz" firstAttribute="leading" secondItem="dtU-kv-js6" secondAttribute="leadingMargin" id="2uX-sx-Qao"/>
                     <constraint firstItem="mzm-V7-MAh" firstAttribute="top" secondItem="PMT-GV-nt9" secondAttribute="top" constant="20" id="3UM-1c-f4G"/>
                     <constraint firstItem="3aL-Im-tpU" firstAttribute="leading" secondItem="PMT-GV-nt9" secondAttribute="leading" constant="10" id="GQJ-lK-aLx"/>
-                    <constraint firstItem="PMT-GV-nt9" firstAttribute="bottom" secondItem="4LG-Kv-LLz" secondAttribute="bottom" constant="398" id="LJz-aL-W5Q"/>
                     <constraint firstItem="3aL-Im-tpU" firstAttribute="top" secondItem="PMT-GV-nt9" secondAttribute="top" constant="20" id="TyL-zi-u2Q"/>
                     <constraint firstItem="4LG-Kv-LLz" firstAttribute="top" secondItem="3aL-Im-tpU" secondAttribute="bottom" constant="20" id="Vs8-4L-h4e"/>
                     <constraint firstItem="mzm-V7-MAh" firstAttribute="leading" secondItem="3aL-Im-tpU" secondAttribute="trailing" constant="8" symbolic="YES" id="b7M-np-51j"/>

@@ -170,7 +170,7 @@
                                 <blurEffect style="light"/>
                             </visualEffectView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="2eM-V6-2fP">
-                                <rect key="frame" x="20" y="444" width="374" height="190"/>
+                                <rect key="frame" x="20" y="201.5" width="374" height="190"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите имя" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O3P-mY-Erd">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
@@ -201,8 +201,8 @@
                                     <constraint firstItem="pVw-HB-LXP" firstAttribute="height" secondItem="O3P-mY-Erd" secondAttribute="height" id="ltK-4K-ZgA"/>
                                 </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Запись на стрижку" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hve-HU-Bvs">
-                                <rect key="frame" x="40" y="344" width="334" height="37.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Запись на стрижку" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hve-HU-Bvs">
+                                <rect key="frame" x="40" y="144" width="334" height="37.5"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="34"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -210,7 +210,7 @@
                                 <size key="shadowOffset" width="1" height="3"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6d-4J-J6e">
-                                <rect key="frame" x="40" y="772" width="334" height="50"/>
+                                <rect key="frame" x="40" y="431.5" width="334" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="KJ2-Yb-ehL"/>
                                 </constraints>
@@ -227,17 +227,17 @@
                         <viewLayoutGuide key="safeArea" id="Ocx-2N-a4W"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="2eM-V6-2fP" firstAttribute="top" secondItem="Ocx-2N-a4W" secondAttribute="top" constant="400" id="AKX-Pv-7YH"/>
                             <constraint firstItem="YAy-eC-31w" firstAttribute="leading" secondItem="h8g-9w-Rml" secondAttribute="leading" id="I25-h9-33L"/>
                             <constraint firstItem="2eM-V6-2fP" firstAttribute="leading" secondItem="Ocx-2N-a4W" secondAttribute="leading" constant="20" id="KRw-wT-3Bv"/>
                             <constraint firstAttribute="bottom" secondItem="YAy-eC-31w" secondAttribute="bottom" id="LrU-Ww-TDf"/>
                             <constraint firstItem="Ocx-2N-a4W" firstAttribute="trailing" secondItem="hve-HU-Bvs" secondAttribute="trailing" constant="40" id="Ujg-wC-Xi9"/>
                             <constraint firstItem="Ocx-2N-a4W" firstAttribute="trailing" secondItem="2eM-V6-2fP" secondAttribute="trailing" constant="20" id="Wzm-FK-R8s"/>
-                            <constraint firstItem="hve-HU-Bvs" firstAttribute="top" secondItem="Ocx-2N-a4W" secondAttribute="top" constant="300" id="XnY-mL-8D4"/>
+                            <constraint firstItem="hve-HU-Bvs" firstAttribute="top" secondItem="Ocx-2N-a4W" secondAttribute="top" constant="100" id="XnY-mL-8D4"/>
                             <constraint firstItem="Ocx-2N-a4W" firstAttribute="trailing" secondItem="Q6d-4J-J6e" secondAttribute="trailing" constant="40" id="YQ4-X6-o1E"/>
+                            <constraint firstItem="Q6d-4J-J6e" firstAttribute="top" secondItem="2eM-V6-2fP" secondAttribute="bottom" constant="40" id="aR3-RG-AQP"/>
                             <constraint firstItem="Q6d-4J-J6e" firstAttribute="leading" secondItem="Ocx-2N-a4W" secondAttribute="leading" constant="40" id="bUJ-03-AAc"/>
                             <constraint firstAttribute="trailing" secondItem="YAy-eC-31w" secondAttribute="trailing" id="k7c-6I-qCU"/>
-                            <constraint firstItem="Ocx-2N-a4W" firstAttribute="bottom" secondItem="Q6d-4J-J6e" secondAttribute="bottom" constant="40" id="oe6-Yv-SbM"/>
+                            <constraint firstItem="2eM-V6-2fP" firstAttribute="top" secondItem="hve-HU-Bvs" secondAttribute="bottom" constant="20" id="osj-tq-0fd"/>
                             <constraint firstItem="hve-HU-Bvs" firstAttribute="leading" secondItem="Ocx-2N-a4W" secondAttribute="leading" constant="40" id="qVX-At-P4f"/>
                             <constraint firstItem="YAy-eC-31w" firstAttribute="top" secondItem="h8g-9w-Rml" secondAttribute="top" id="rg6-fM-LMn"/>
                         </constraints>
@@ -468,7 +468,7 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UhK-Ee-hTi">
                                         <rect key="frame" x="0.0" y="70" width="334" height="50"/>
                                         <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pkm-32-Mep">
                                         <rect key="frame" x="0.0" y="140" width="334" height="50"/>
