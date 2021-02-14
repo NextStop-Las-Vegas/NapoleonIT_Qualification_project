@@ -19,23 +19,36 @@ class PickDateViewController: UIViewController {
     @IBOutlet weak var bookButton: UIButton!
     @IBOutlet weak var dateField: UITextField!
     
-    let dp = UIDatePicker()
+    var dp: UIDatePicker?
     var effect: UIVisualEffect!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    
+     
+    override func viewWillAppear(_ animated: Bool) {
+        dp = UIDatePicker()
+        super.viewWillAppear(animated)
         dateField.inputView = dp
-        dp.datePickerMode = .dateAndTime
+        if #available(iOS 13.4, *) {
+            dp?.preferredDatePickerStyle = .wheels
+        } else {
+            // Fallback on earlier versions
+        }
+        dp?.datePickerMode = .dateAndTime
         let localeID = Locale.preferredLanguages.first
-        dp.locale = Locale(identifier: localeID!)
+        dp?.locale = Locale(identifier: localeID!)
         
         let toolbar = UIToolbar()
         toolbar.sizeToFit()
         let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(doneAction))
         let flexSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
         toolbar.setItems([flexSpace, doneButton], animated: true)
-        
+
         dateField.inputAccessoryView = toolbar
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
         
         setUpElements()
         
@@ -53,7 +66,7 @@ class PickDateViewController: UIViewController {
     func getDateFromPicker(){
         let formatter = DateFormatter()
         formatter.dateFormat = "dd.MM.yyyy HH:mm"
-        dateField.text = formatter.string(from: dp.date)
+        dateField.text = formatter.string(from: dp?.date ?? Date())
     }
     
     @IBAction func getOrderTapped(_ sender: Any) {

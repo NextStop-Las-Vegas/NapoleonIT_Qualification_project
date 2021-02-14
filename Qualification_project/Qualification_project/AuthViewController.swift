@@ -30,6 +30,7 @@ class AuthViewController: UIViewController {
     @IBOutlet weak var enterButton: UIButton!
     
     
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         nameField.delegate = self

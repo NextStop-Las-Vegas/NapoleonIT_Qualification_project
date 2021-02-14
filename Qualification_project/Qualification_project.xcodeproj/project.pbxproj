@@ -22,7 +22,6 @@
 		E9E2384B2591874100AD739D /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E2384A2591874100AD739D /* NewsTableViewCell.swift */; };
 		E9E2384E259187B800AD739D /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E2384D259187B800AD739D /* NewsTableViewController.swift */; };
 		E9F88D372590CB16005239EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F88D362590CB16005239EF /* AppDelegate.swift */; };
-		E9F88D392590CB16005239EF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F88D382590CB16005239EF /* SceneDelegate.swift */; };
 		E9F88D3B2590CB16005239EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F88D3A2590CB16005239EF /* ViewController.swift */; };
 		E9F88D3E2590CB16005239EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9F88D3C2590CB16005239EF /* Main.storyboard */; };
 		E9F88D412590CB16005239EF /* Qualification_project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E9F88D3F2590CB16005239EF /* Qualification_project.xcdatamodeld */; };
@@ -59,7 +58,6 @@
 		E9E2384D259187B800AD739D /* NewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
 		E9F88D332590CB16005239EF /* Qualification_project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qualification_project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9F88D362590CB16005239EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E9F88D382590CB16005239EF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E9F88D3A2590CB16005239EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E9F88D3D2590CB16005239EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E9F88D402590CB16005239EF /* Qualification_project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Qualification_project.xcdatamodel; sourceTree = "<group>"; };
@@ -146,7 +144,6 @@
 				E9F88D6F259169FA005239EF /* Masters */,
 				E9F88D5F259155B6005239EF /* Booking */,
 				E9F88D362590CB16005239EF /* AppDelegate.swift */,
-				E9F88D382590CB16005239EF /* SceneDelegate.swift */,
 				E9F88D3C2590CB16005239EF /* Main.storyboard */,
 				E9F88D422590CB17005239EF /* Assets.xcassets */,
 				E9F88D442590CB17005239EF /* LaunchScreen.storyboard */,
@@ -215,6 +212,7 @@
 				E9F88D302590CB15005239EF /* Frameworks */,
 				E9F88D312590CB15005239EF /* Resources */,
 				89DD9FB779E5B119120D65FE /* [CP] Embed Pods Frameworks */,
+				E942577C25D68892002BFAB7 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -294,6 +292,25 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Qualification_project/Pods-Qualification_project-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E942577C25D68892002BFAB7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}\n\n\n",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)\n\n\n\n\nчерез  \n\nВведите сообщение\n",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
+		};
 		EECF5CB398176E9091E2C319 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -330,7 +347,6 @@
 				E9F88D372590CB16005239EF /* AppDelegate.swift in Sources */,
 				E9551B3C2593A14D00FBA622 /* HomeViewController.swift in Sources */,
 				E9E2384E259187B800AD739D /* NewsTableViewController.swift in Sources */,
-				E9F88D392590CB16005239EF /* SceneDelegate.swift in Sources */,
 				E94543BF2592B9DD0082D282 /* AuthViewController.swift in Sources */,
 				E94543BC2592ADBE0082D282 /* MoreNews.swift in Sources */,
 				E9F88D5C259155AC005239EF /* BookingTableViewCell.swift in Sources */,
@@ -492,12 +508,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				INFOPLIST_FILE = Qualification_project/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Pavel.Qualification-project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -513,11 +531,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Qualification_project/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Pavel.Qualification-project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

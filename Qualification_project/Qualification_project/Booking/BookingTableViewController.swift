@@ -49,7 +49,7 @@ class BookingTableViewController: UITableViewController {
     
     func transitionToOrder() {
         
-        let pickDateViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.pickDateViewController) as! PickDateViewController
+        let pickDateViewController = storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.pickDateViewController) as! PickDateViewController
         self.navigationController?.pushViewController(pickDateViewController, animated: true)
     }
 }

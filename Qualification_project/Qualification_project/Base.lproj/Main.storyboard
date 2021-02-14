@@ -170,7 +170,7 @@
                                 <blurEffect style="light"/>
                             </visualEffectView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="2eM-V6-2fP">
-                                <rect key="frame" x="20" y="201.5" width="374" height="190"/>
+                                <rect key="frame" x="20" y="201.5" width="374" height="426"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите имя" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O3P-mY-Erd">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
@@ -195,6 +195,9 @@
                                         <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="iwR-S2-cTp">
+                                        <rect key="frame" x="0.0" y="210" width="374" height="216"/>
+                                    </datePicker>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="8v9-kH-A8k" firstAttribute="height" secondItem="O3P-mY-Erd" secondAttribute="height" id="ECV-p4-wWu"/>
@@ -210,7 +213,7 @@
                                 <size key="shadowOffset" width="1" height="3"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6d-4J-J6e">
-                                <rect key="frame" x="40" y="431.5" width="334" height="50"/>
+                                <rect key="frame" x="40" y="667.5" width="334" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="KJ2-Yb-ehL"/>
                                 </constraints>
@@ -406,6 +409,7 @@
                                         <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
                                         <state key="normal" title="Регистрация"/>
                                         <connections>
+                                            <action selector="signUpButton:" destination="6Mu-mc-rqc" eventType="touchUpInside" id="WiP-2E-tuS"/>
                                             <segue destination="L49-Pv-Kfl" kind="show" id="sZp-37-EEC"/>
                                         </connections>
                                     </button>
